@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+// import Logo from "./images/logo.png"
 
 // npm i @emailjs/browser
 
@@ -31,6 +32,7 @@ const Contact = () => {
 
   return (
     <StyledContactForm>
+      {/* <img alt="logo" src={Logo}></img> */}
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
@@ -50,12 +52,20 @@ export default Contact;
 const StyledContactForm = styled.div`
   width: 400px;
 
+  img {
+    float: left;
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-item: left;
+  }
+
   form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    font-size: 16px;
+    font-size: 16pt;
 
     input {
       width: 100%;
@@ -97,9 +107,11 @@ const StyledContactForm = styled.div`
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: purple;
       color: white;
       border: none;
+      font-family: 'Hanalei Fill', cursive;
+      font-size: 16pt;
     }
   }
 `;

@@ -2,8 +2,13 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: rgb(210, 180, 140);
+  background-color: #e8e5e6;
   height: 100vh;
+}
+.App img{
+  width: 20%;
+  height: 20%;
+  float: left;
 }
 
 .App-logo {
